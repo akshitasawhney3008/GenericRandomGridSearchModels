@@ -35,7 +35,7 @@ for i in range(iter):
     activation = [rsbp['activation']]
     solver = [rsbp['solver']]
     alpha = [x for x in np.linspace(max(0.0001, rsbp['alpha']-0.01), min(1, rsbp['alpha']+0.01), num=1000)]
-    max_iter = rsbp['max_iter']
+    max_iter = [rsbp['max_iter']]
 
     grid = {'hidden_layer_sizes': numLayers,
             'activation': activation,
